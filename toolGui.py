@@ -55,7 +55,7 @@ class CADOCS:
         # TextWidget
         self.textWidget = tk.Text(self.right_frame, width=20, height=2, bg=BG_COLOR, fg=TEXT_COLOR, font=FONT, padx=5, pady=5)
         self.textWidget.pack(expand=True, fill=tk.BOTH)
-        self.textWidget.configure(state=tk.DISABLED)
+        self.textWidget.configure(state=tk.NORMAL)
 
         # Scrollbar
         self.scrollBar = tk.Scrollbar(self.right_frame, command=self.textWidget.yview)
